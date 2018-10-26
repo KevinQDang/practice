@@ -1,3 +1,40 @@
 <div>
-  {{$ctrl.item.description}}
+  
+  <table class="table">
+    <thead>
+      <tr>
+        <th>
+          #
+        </th>
+        <th>
+          Name
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Image
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          {{$ctrl.item.id}}
+        </td>
+        <td>
+          {{$ctrl.item.name}}
+        </td>
+        <td>
+          {{$ctrl.item.description}}
+        </td>
+        <td>
+          <img src="{{$ctrl.item.image_url}}" height="40" width="40">
+        </td>
+      </tr>
+      
+      
+      
+    </tbody>
+  </table>
 </div>

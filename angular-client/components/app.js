@@ -1,8 +1,12 @@
 angular.module('app')
-  .controller('AppCtrl', (itemsService) => {
-    itemsService.getAll((data) => {
-      this.items = data;
-    });
+  .controller('AppCtrl', function AppCtrl(itemsService) {
+    itemsService.get()
+      .then((result) => {
+        this.items = result;
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   })
   .component('app', {
     bindings: {},

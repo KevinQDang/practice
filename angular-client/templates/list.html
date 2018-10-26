@@ -1,5 +1,14 @@
 <div>
   <h4> List Component </h4>
   There are {{$ctrl.items.length}} items.
-  <list-item ng-repeat="item in $ctrl.items" item=item />
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <list-item ng-repeat="item in $ctrl.items" item=item />
+       
+      </div>
+    </div>
+  </div>
+
 </div>
+<pre>{{$ctrl | json}}</pre>
