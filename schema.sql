@@ -6,7 +6,7 @@ USE test;
 
 CREATE TABLE items (
   id int NOT NULL AUTO_INCREMENT,
-  quantity integer NOT NULL,
+  name integer NOT NULL,
   description varchar(50) NOT NULL,
   PRIMARY KEY (ID)
 );
